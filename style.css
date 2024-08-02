@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --grey: hsl(218, 13%, 24%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --Orange: hsl(25, 97%, 53%);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 100vw;
+  max-height: 100vh;
+  background-color: var(--very-dark-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 93vh;
+}
+.card-container {
+  border-radius: 20px;
+  font-family: Overpass;
+  color: var(--white);
+  background-color: var(--dark-blue);
+  margin: 10px;
+  padding: 20px;
+  max-width: 20em;
+}
+.mainview {
+  display: none;
+}
+.star {
+  background-color: var(--grey);
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.how {
+  margin-bottom: 10px;
+}
+.desc {
+  color: var(--light-grey);
+  margin-bottom: 10px;
+}
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn {
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 50%;
+  color: var(--white);
+  background-color: var(--grey);
+  margin-bottom: 20px;
+}
+
+.active {
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 50%;
+  color: var(--very-dark-blue);
+  background-color: var(--Orange);
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  background-color: var(--white);
+  color: var(--very-dark-blue);
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+}
+
+.submit {
+  color: var(--very-dark-blue);
+  background-color: var(--Orange);
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  width: 100%;
+}
+.submit button {
+  align-items: center;
+  display: flex;
+}
+
+.submit:hover {
+  background-color: var(--white);
+  color: var(--very-dark-blue);
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.hidden {
+  /* display: none; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rated {
+  color: var(--Orange);
+  background-color: var(--grey);
+  padding: 8px;
+  border-radius: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.thx-desc {
+  color: var(--light-grey);
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.attribution {
+  color: white;
+}
